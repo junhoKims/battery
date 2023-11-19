@@ -16,7 +16,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "rm -rf dist esm && tsc -p tsconfig.build.json --declaration --emitDeclarationOnly --declarationDir dist && rollup -c rollup.config.js",
+    "build": "rm -rf dist esm && tsc -p tsconfig.build.json && rollup -c rollup.config.js",
     "prepack": "yarn build",
     "test": "jest -c jest.config.js && tsc --noEmit",
     "test:unit": "jest -c jest.config.js",
