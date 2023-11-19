@@ -20,4 +20,12 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.{js,jsx}'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 };
