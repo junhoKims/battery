@@ -18,6 +18,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:configs/rollup"\
     },\
     {\
+      "name": "@junhokims/date",\
+      "reference": "workspace:packages/date"\
+    },\
+    {\
       "name": "@junhokims/eslint-plugin",\
       "reference": "workspace:packages/eslint-plugin"\
     },\
@@ -29,8 +33,9 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@junhokims/date", ["workspace:packages/date"]],\
     ["@junhokims/eslint-plugin", ["workspace:packages/eslint-plugin"]],\
-    ["@junhokims/rollup-config", ["virtual:69b375656e783cc36b89b31ea350b4c7422e5ead8886ac07c027d012a9c381ad2301e3a5620ee248ade7cf02b00bd7a5c99cccef6e7bf518d0e722a55dd6f127#workspace:configs/rollup", "workspace:configs/rollup"]],\
+    ["@junhokims/rollup-config", ["virtual:ecc8bb5d13a1bb50b5ba6f1041182fcf078ec5269605b2b6a7e8bed963fd487a486ec4e4b1ebd5fa92609235ecd7f9daa9750a55bfaff47db3b14fa055cd6a69#workspace:configs/rollup", "workspace:configs/rollup"]],\
     ["@junhokims/utils", ["workspace:packages/utils"]],\
     ["battery", ["workspace:."]]\
   ],\
@@ -3322,6 +3327,26 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@junhokims/date", [\
+      ["workspace:packages/date", {\
+        "packageLocation": "./packages/date/",\
+        "packageDependencies": [\
+          ["@junhokims/date", "workspace:packages/date"],\
+          ["@babel/core", "npm:7.23.3"],\
+          ["@babel/preset-env", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:7.23.3"],\
+          ["@babel/preset-typescript", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:7.23.3"],\
+          ["@junhokims/rollup-config", "virtual:ecc8bb5d13a1bb50b5ba6f1041182fcf078ec5269605b2b6a7e8bed963fd487a486ec4e4b1ebd5fa92609235ecd7f9daa9750a55bfaff47db3b14fa055cd6a69#workspace:configs/rollup"],\
+          ["@types/jest", "npm:29.5.8"],\
+          ["babel-jest", "virtual:c7b7dd2162bb89d66440135aa030d2ec0cf22ba0b9d4fb868640388e0826c80d61edd97166cd15b117cc739c7ff3454a096fbe02cba7f34175f47cfcaf94ded9#npm:29.7.0"],\
+          ["dayjs", "npm:1.11.10"],\
+          ["jest", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:29.7.0"],\
+          ["jest-environment-jsdom", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:29.7.0"],\
+          ["rollup", "npm:4.5.0"],\
+          ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@junhokims/eslint-plugin", [\
       ["workspace:packages/eslint-plugin", {\
         "packageLocation": "./packages/eslint-plugin/",\
@@ -3343,10 +3368,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@junhokims/rollup-config", [\
-      ["virtual:69b375656e783cc36b89b31ea350b4c7422e5ead8886ac07c027d012a9c381ad2301e3a5620ee248ade7cf02b00bd7a5c99cccef6e7bf518d0e722a55dd6f127#workspace:configs/rollup", {\
-        "packageLocation": "./.yarn/__virtual__/@junhokims-rollup-config-virtual-69762b2232/1/configs/rollup/",\
+      ["virtual:ecc8bb5d13a1bb50b5ba6f1041182fcf078ec5269605b2b6a7e8bed963fd487a486ec4e4b1ebd5fa92609235ecd7f9daa9750a55bfaff47db3b14fa055cd6a69#workspace:configs/rollup", {\
+        "packageLocation": "./.yarn/__virtual__/@junhokims-rollup-config-virtual-d5147b679c/1/configs/rollup/",\
         "packageDependencies": [\
-          ["@junhokims/rollup-config", "virtual:69b375656e783cc36b89b31ea350b4c7422e5ead8886ac07c027d012a9c381ad2301e3a5620ee248ade7cf02b00bd7a5c99cccef6e7bf518d0e722a55dd6f127#workspace:configs/rollup"],\
+          ["@junhokims/rollup-config", "virtual:ecc8bb5d13a1bb50b5ba6f1041182fcf078ec5269605b2b6a7e8bed963fd487a486ec4e4b1ebd5fa92609235ecd7f9daa9750a55bfaff47db3b14fa055cd6a69#workspace:configs/rollup"],\
           ["@babel/core", "npm:7.23.3"],\
           ["@babel/preset-env", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:7.23.3"],\
           ["@babel/preset-typescript", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:7.23.3"],\
@@ -3397,7 +3422,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/core", "npm:7.23.3"],\
           ["@babel/preset-env", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:7.23.3"],\
           ["@babel/preset-typescript", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:7.23.3"],\
-          ["@junhokims/rollup-config", "virtual:69b375656e783cc36b89b31ea350b4c7422e5ead8886ac07c027d012a9c381ad2301e3a5620ee248ade7cf02b00bd7a5c99cccef6e7bf518d0e722a55dd6f127#workspace:configs/rollup"],\
+          ["@junhokims/rollup-config", "virtual:ecc8bb5d13a1bb50b5ba6f1041182fcf078ec5269605b2b6a7e8bed963fd487a486ec4e4b1ebd5fa92609235ecd7f9daa9750a55bfaff47db3b14fa055cd6a69#workspace:configs/rollup"],\
           ["@types/jest", "npm:29.5.8"],\
           ["babel-jest", "virtual:c7b7dd2162bb89d66440135aa030d2ec0cf22ba0b9d4fb868640388e0826c80d61edd97166cd15b117cc739c7ff3454a096fbe02cba7f34175f47cfcaf94ded9#npm:29.7.0"],\
           ["jest", "virtual:7f6215b39b439bc9544697d0a8ca31137997429375cbaeb39a7acfc22e5a965bf937a175855215d86a7e83fdc3039983b089f81c7622d8305bffc7b4e70322d7#npm:29.7.0"],\
@@ -5282,6 +5307,15 @@ const RAW_RUNTIME_STATE =
           ["abab", "npm:2.0.6"],\
           ["whatwg-mimetype", "npm:3.0.0"],\
           ["whatwg-url", "npm:11.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["dayjs", [\
+      ["npm:1.11.10", {\
+        "packageLocation": "../../.yarn/berry/cache/dayjs-npm-1.11.10-2b4382efc1-10c0.zip/node_modules/dayjs/",\
+        "packageDependencies": [\
+          ["dayjs", "npm:1.11.10"]\
         ],\
         "linkType": "HARD"\
       }]\

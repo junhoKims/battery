@@ -58,7 +58,7 @@ exports.generateRollupConfig = function generateRollupConfig({ packageDir }) {
         }),
         json(),
       ],
-      preserveModules: isESMFormat,
+      // preserveModules: isESMFormat,
     };
   }
 

@@ -1,1 +1,1 @@
-export * from './getPriceWithComma'
+export * from './getPriceWithComma';
