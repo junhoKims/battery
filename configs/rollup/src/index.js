@@ -4,6 +4,7 @@ const babel = require('@rollup/plugin-babel').default;
 const commonjs = require('@rollup/plugin-commonjs');
 const json = require('@rollup/plugin-json');
 const resolve = require('@rollup/plugin-node-resolve').default;
+const builtins = require('builtin-modules');
 
 exports.generateRollupConfig = function generateRollupConfig({ packageDir }) {
   const packageJSON = require(path.join(packageDir, 'package.json'));
@@ -19,7 +20,7 @@ exports.generateRollupConfig = function generateRollupConfig({ packageDir }) {
   const external = (pkg) => {
     const dependencies = Object.keys(packageJSON.dependencies || {});
     const peerDependencies = Object.keys(packageJSON.peerDependencies || {});
-    const externals = [...dependencies, ...peerDependencies];
+    const externals = [...dependencies, ...peerDependencies, ...builtins];
 
     return externals.some((externalPkg) => {
       return pkg.startsWith(externalPkg);

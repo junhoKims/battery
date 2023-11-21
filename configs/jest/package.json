@@ -1,0 +1,24 @@
+{
+  "name": "@junhokims/jest-config",
+  "version": "0.0.1",
+  "description": "Config of jest",
+  "author": {
+    "name": "junhoKims",
+    "email": "kraksin12@gmail.com"
+  },
+  "sideEffects": false,
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "require": "./src/index.js",
+      "import": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

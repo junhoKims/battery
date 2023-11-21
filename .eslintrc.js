@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   overrides: [
     {
