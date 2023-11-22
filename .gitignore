@@ -48,3 +48,9 @@ dist
 esm
 
 .ultra.cache.json
+my-website
+
+# dosc
+.docusaurus
+.cache-loader
+docs/.yarn

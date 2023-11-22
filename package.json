@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "author": {
+    "name": "junhoKims",
+    "email": "kraksin12@gmail.com"
+  },
   "keywords": [],
-  "author": "",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn ultra -r build --silent",
+    "build": "yarn ultra -r build",
     "test": "yarn ultra -r test --silent",
     "test:silent": "yarn ultra -r test:silent --silent"
   },
@@ -51,6 +54,7 @@
   "packageManager": "yarn@4.0.2",
   "workspaces": [
     "packages/**/**",
-    "configs/*"
+    "configs/*",
+    "docs"
   ]
 }
