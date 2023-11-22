@@ -8,7 +8,16 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "test:utils": "yarn workspace @junhokims/utils test"
+    "build": "yarn ultra -r build --silent",
+    "test": "yarn ultra -r test --silent",
+    "test:silent": "yarn ultra -r test:silent --silent"
+  },
+  "ultra": {
+    "concurrent": [
+      "build",
+      "test",
+      "test:silent"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
@@ -26,7 +35,8 @@
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "prettier": "^3.0.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "ultra-runner": "^3.10.5"
   },
   "resolutions": {
     "typescript": "5.2.2",

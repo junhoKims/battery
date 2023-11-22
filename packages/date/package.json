@@ -21,7 +21,8 @@
   },
   "scripts": {
     "build": "rm -rf dist esm && tsc -p tsconfig.build.json && rollup -c rollup.config.js",
-    "test": "jest -c jest.config.js && tsc --noEmit",
+    "test": "jest -c jest.config.js",
+    "test:silent": "jest -c jest.config.js --silent",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
