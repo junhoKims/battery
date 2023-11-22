@@ -12,9 +12,19 @@ exports.config = function generateJestConfig({ rootDir, ...rest }) {
     return isWebapp ? 'jsdom' : 'node';
   };
 
+  const getDefaultSetupFilesAfterEnv = () => {
+    try {
+      require(path.join(rootDir, 'jest.setup.js'));
+      return [`${rootDir}/jest.setup.js`];
+    } catch (e) {
+      return [];
+    }
+  };
+
   return {
     rootDir,
     displayName: packageJSON.name,
+    setupFilesAfterEnv: getDefaultSetupFilesAfterEnv(),
     testEnvironment: getTestEnvironment(packageJSON),
     moduleNameMapper: {
       '^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
@@ -22,10 +32,4 @@ exports.config = function generateJestConfig({ rootDir, ...rest }) {
     },
     ...rest,
   };
-};
-
-exports.setup = {
-  jsdom: function () {
-    require('@testing-library/jest-dom');
-  },
 };

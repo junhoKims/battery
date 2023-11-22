@@ -15,9 +15,6 @@
     },
     "./package.json": "./package.json"
   },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^6.1.4"
-  },
   "publishConfig": {
     "access": "public"
   }

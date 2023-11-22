@@ -1,1 +1,1 @@
-require('@junhokims/jest-config').setup.jsdom();
+import '@testing-library/jest-dom';
