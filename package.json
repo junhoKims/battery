@@ -17,7 +17,7 @@
     "check:lint-stage": "yarn eslint --quiet",
     "check:prettier": "yarn prettier --write --log-level silent docs/src/**/*.{ts,tsx,js,jsx} packages/*/src/**/*.{ts,tsx,js,jsx}",
     "check:prettier-stage": "yarn prettier --write --log-level silent",
-    "check:type": "tsc --noEmit",
+    "check:type": "yarn ultra -r check:type",
     "test": "yarn ultra -r test --silent",
     "test:silent": "yarn ultra -r test:silent --silent",
     "pre-commit": "lint-staged --no-stash"
@@ -26,7 +26,8 @@
     "concurrent": [
       "build",
       "test",
-      "test:silent"
+      "test:silent",
+      "check:type"
     ]
   },
   "devDependencies": {
