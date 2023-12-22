@@ -5017,6 +5017,7 @@ const RAW_RUNTIME_STATE =
           ["@junhokims/jest-config", "workspace:configs/jest"],\
           ["@junhokims/rollup-config", "virtual:ecc8bb5d13a1bb50b5ba6f1041182fcf078ec5269605b2b6a7e8bed963fd487a486ec4e4b1ebd5fa92609235ecd7f9daa9750a55bfaff47db3b14fa055cd6a69#workspace:configs/rollup"],\
           ["@junhokims/utils", "workspace:packages/utils"],\
+          ["@testing-library/dom", "npm:9.3.3"],\
           ["@testing-library/jest-dom", "virtual:d0518bd87d1c56fb8ae905f32f389b4552c62a518edbef15c5091cee42816e7084018d54196278ecd9fb78fa4d00abbc4aea1f62a153ee95d0c7bc5ef870c5b2#npm:6.1.4"],\
           ["@testing-library/react", "virtual:d0518bd87d1c56fb8ae905f32f389b4552c62a518edbef15c5091cee42816e7084018d54196278ecd9fb78fa4d00abbc4aea1f62a153ee95d0c7bc5ef870c5b2#npm:14.1.2"],\
           ["@testing-library/user-event", "virtual:d0518bd87d1c56fb8ae905f32f389b4552c62a518edbef15c5091cee42816e7084018d54196278ecd9fb78fa4d00abbc4aea1f62a153ee95d0c7bc5ef870c5b2#npm:14.5.1"],\
@@ -6020,7 +6021,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@testing-library-user-event-virtual-9a77d84ade/3/.yarn/berry/cache/@testing-library-user-event-npm-14.5.1-daca21fbcb-10c0.zip/node_modules/@testing-library/user-event/",\
         "packageDependencies": [\
           ["@testing-library/user-event", "virtual:d0518bd87d1c56fb8ae905f32f389b4552c62a518edbef15c5091cee42816e7084018d54196278ecd9fb78fa4d00abbc4aea1f62a153ee95d0c7bc5ef870c5b2#npm:14.5.1"],\
-          ["@testing-library/dom", null],\
+          ["@testing-library/dom", "npm:9.3.3"],\
           ["@types/testing-library__dom", null]\
         ],\
         "packagePeers": [\
