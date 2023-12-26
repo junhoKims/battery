@@ -9,6 +9,7 @@ export function getPriceWithComma({
 }: GetPriceWithCommaProps): string {
   const intNum = typeof price === 'string' ? parseInt(price, 10) : price;
   console.log('Main Branch Test');
+  console.log('Main Branch Test 2');
 
   if (Number.isNaN(intNum)) {
     return '';
