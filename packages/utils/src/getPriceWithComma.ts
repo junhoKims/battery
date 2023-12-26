@@ -11,6 +11,7 @@ export function getPriceWithComma({
   console.log('Main Branch Test');
   console.log('Main Branch Test 2');
   console.log('Main Branch Test 3');
+  console.log('Main Branch Test 4');
 
   if (Number.isNaN(intNum)) {
     return '';
